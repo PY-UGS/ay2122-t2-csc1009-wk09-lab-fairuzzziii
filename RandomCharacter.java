@@ -33,25 +33,26 @@ public class RandomCharacter {
         RandomCharacter c = new RandomCharacter();
 
         int i = 0;
+        // creates arrays to store the different types of output (uppercase,lowercase,random number, random character)
         char[] lowerCharArray = new char[15];
         char[] upperCharArray = new char[15];
         int[] randomDigitArray = new int[15];
         char[] randomCharacterArray = new char[15];
 
 
-        for (i = 0; i<15 ; i++){
+        for (i = 0; i<15 ; i++){ //print out 15 lower case char into array
             lowerCharArray[i] = c.getRandomLowerCaseCharacter();
         }
 
-        for (i = 0; i<15 ; i++){
+        for (i = 0; i<15 ; i++){ //print out 15 upper case char into array
             upperCharArray[i] = c.getRandomUpperCaseCharacter();
         }
 
-        for (i = 0; i<15 ; i++){
+        for (i = 0; i<15 ; i++){ //print out 15 random digits into array
             randomDigitArray[i] = c.getRandomDigit();
         }
 
-        for (i = 0; i<15 ; i++){
+        for (i = 0; i<15 ; i++){ //print out 15 random char into array
             randomCharacterArray[i] = c.getRandomCharacter();
         }
 
